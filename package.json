@@ -1,0 +1,23 @@
+{
+  "name": "line-miniapp-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "check": "pnpm typecheck && pnpm test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.3.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "packageManager": "pnpm@10.16.1"
+}
